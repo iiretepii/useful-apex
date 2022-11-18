@@ -108,7 +108,7 @@ global class OrgUtil {
 
 	// very commonly requested information from organization
 	global static Boolean isSandbox() {
-		return Info == null ? getOrgInstance().contains('cs') : getInfo().isSandbox;
+		return getInfo().isSandbox;
 	}
 
 	// allows admins to unlock a number of people in a sandbox
